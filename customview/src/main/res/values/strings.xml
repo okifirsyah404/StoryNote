@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="password_not_empty">Password must not be empty</string>
+    <string name="re_password_not_empty">Repeat password must not be empty</string>
+    <string name="min_password_length">Password must be at least %1$d characters</string>
+    <string name="min_re_password_length">Repeat password must be at least %1$d characters</string>
+</resources>

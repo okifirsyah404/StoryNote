@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primary_50"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/Theme.StoryNote.Text.LabelLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_toStartOf="@id/btn_setting"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/dimen_8dp"
+            android:src="@drawable/ic_map" />
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/dimen_8dp"
+            android:src="@drawable/ic_setting" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

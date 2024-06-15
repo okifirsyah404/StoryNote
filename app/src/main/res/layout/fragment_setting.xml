@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.setting.SettingFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_tile_dark_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/theme_switch_icon"
+            android:src="@drawable/ic_theme_switch" />
+
+        <TextView
+            style="@style/Theme.StoryNote.Text.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_theme" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/btn_group_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_50"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_system_theme"
+                style="@style/Theme.StoryNote.OutlinedButtonTheme.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_smartphone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_light_theme"
+                style="@style/Theme.StoryNote.OutlinedButtonTheme.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_light_mode" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_dark_theme"
+                style="@style/Theme.StoryNote.OutlinedButtonTheme.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_dark_mode" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tile_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_tile_dark_mode">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/language_switch_icon"
+            android:src="@drawable/ic_language" />
+
+        <TextView
+            style="@style/Theme.StoryNote.Text.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/language" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/btn_group_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_50"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_us_language"
+                style="@style/Theme.StoryNote.OutlinedButtonTheme.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_us"
+                app:iconTint="@null" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_id_language"
+                style="@style/Theme.StoryNote.OutlinedButtonTheme.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_indonesia"
+                app:iconTint="@null" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_out"
+        style="@style/Theme.StoryNote.FilledButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Story Note</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="re_password">Repeat Password</string>
+    <string name="not_have_account_yet">Don\'t have an account yet</string>
+    <string name="register_account_now">Register Story Note Account</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login_account">Login Story Note Account</string>
+    <string name="name">Name</string>
+    <string name="logo" translatable="false">logo</string>
+    <string name="register_account">Register Account</string>
+    <string name="code_user_not_found" translatable="false">User not found</string>
+    <string name="code_email_already_taken" translatable="false">Email is already taken</string>
+    <string name="code_invalid_password" translatable="false">Invalid password</string>
+    <string name="user_not_found">User not found</string>
+    <string name="email_already_taken">Email is already taken</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="email_not_empty">Email must not be empty</string>
+    <string name="email_invalid">Email is not valid</string>
+    <string name="name_not_empty">Name must not be empty</string>
+    <string name="password_not_empty">Password must not be empty</string>
+    <string name="re_password_not_empty">Repeat password must not be empty</string>
+    <string name="re_password_not_match">Repeat Password does not match</string>
+    <string name="min_password_length">Password must be at least %1$d characters</string>
+    <string name="min_re_password_length">Repeat password must be at least %1$d characters</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="glint" translatable="false">glint</string>
+    <string name="thumb" translatable="false">thumb</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="desc_account_registered">Your account has been successfully registered</string>
+    <string name="title_account_registered">You\'re Sets</string>
+    <string name="generic_error_title">Something went wrong</string>
+    <string name="theme_switch_icon">Theme Switch Icon</string>
+    <string name="setting">Setting</string>
+    <string name="app_theme">App Theme</string>
+    <string name="language">Language</string>
+    <string name="language_switch_icon" translatable="false">Language Switch Icon</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back">Back</string>
+    <string name="dialog_desc_sign_out">Are you sure to sign out?</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem. Ut faucibus pulvinar elementum integer enim neque volutpat. Morbi tristique senectus et netus. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Tincidunt lobortis feugiat vivamus at augue. Eget arcu dictum varius duis at consectetur lorem donec. Iaculis urna id volutpat lacus laoreet non curabitur gravida. In iaculis nunc sed augue. Purus in mollis nunc sed.</string>
+    <string name="author_posted">Posted by %1$s</string>
+    <string name="act_retry">Retry</string>
+    <string name="desc_count_success">You will be redirected to login in %1$d seconds</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="app_version" translatable="false">v %s</string>
+    <string name="add_story">Add Story</string>
+    <string name="add_story_description">Add Description</string>
+
+    <string-array name="pictures">
+        <item>From Camera</item>
+        <item>From Gallery</item>
+    </string-array>
+    <string name="title_permission_required">Permission required</string>
+    <string name="desc_permission_required">Please allow all permission to continue</string>
+    <string name="title_dialog_image">Empty Image</string>
+    <string name="msg_dialog_image">Image cannot be empty</string>
+    <string name="title_dialog_desc">Description Empty</string>
+    <string name="msg_dialog_desc">Description cannot be empty</string>
+    <string name="stories_not_found">Stories not found</string>
+    <string name="share_with_location">Share with location?</string>
+    <string name="stories_map">Stories Map</string>
+</resources>

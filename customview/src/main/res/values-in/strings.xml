@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="password_not_empty">Kata sandi tidak boleh kosong</string>
+    <string name="re_password_not_empty">Ulangi kata sandi tidak boleh kosong</string>
+    <string name="min_password_length">Kata sandi minimal %1$d karakter</string>
+    <string name="min_re_password_length">Ulangi kata sandi minimal %1$d karakter</string>
+</resources>

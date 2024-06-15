@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.detail_story.DetailStoryFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_detail_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logo_dimen_xxlarge"
+                android:layout_marginBottom="@dimen/dimen_48dp"
+                tools:src="@drawable/placehoder" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                app:layout_constraintTop_toBottomOf="@id/iv_detail_photo"
+                tools:text="@string/lorem_ipsum" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_detail_photo"
+                    tools:text="@string/app_name" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_create_at"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_detail_photo"
+                    tools:text="8 hours ago" />
+            </LinearLayout>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:visibility="gone"
+                app:chipIcon="@drawable/ic_location"
+                app:chipStrokeColor="@color/primary_50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_description"
+                tools:text="Chip" />
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/loading_container"
+        layout="@layout/container_loading"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <include
+        android:id="@+id/error_container"
+        layout="@layout/container_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

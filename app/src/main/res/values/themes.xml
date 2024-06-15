@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textAppearance">@style/Theme.StoryNote.MainTextAppearance</item>
+
+        <item name="colorPrimary">@color/primary_50</item>
+        <item name="colorOnPrimary">@color/neutral_100</item>
+
+
+        <!-- Customize your light theme here. -->
+        <item name="textColor">@color/neutral_10</item>
+        <item name="iconColorVariant">@color/neutral_40</item>
+        <item name="primaryBackgroundColor">@color/neutral_100</item>
+        <item name="customEditTextBorderColor">@color/neutral_60</item>
+
+        <item name="mainBackgroundColor">@color/neutral_100</item>
+    </style>
+
+    <style name="Theme.StoryNote" parent="Base.Theme.StoryNote" />
+
+    <style name="Theme.StoryNote.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.StoryNote.AppWidgetContainer" parent="Theme.StoryNote.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+</resources>

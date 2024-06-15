@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textAppearance">@style/Theme.StoryNote.MainTextAppearance</item>
+        <item name="colorPrimary">@color/primary_50</item>
+        <item name="colorOnPrimary">@color/neutral_10</item>
+
+        <!-- Customize your dark theme here. -->
+        <item name="textColor">@color/neutral_100</item>
+        <item name="iconColorVariant">@color/neutral_60</item>
+        <item name="primaryBackgroundColor">@color/neutral_10</item>
+        <item name="customEditTextBorderColor">@color/neutral_90</item>
+
+        <item name="mainBackgroundColor">@color/neutral_10</item>
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+{
+  "error": false,
+  "message": "success",
+  "loginResult": {
+    "userId": "user-umqii5CW1k86SIPk",
+    "name": "nana12",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLVA5aDhudDFKc2ZwakZaWVQiLCJpYXQiOjE3MTc0ODQ0NzN9.6KdyTfDNdQav7KTsFXNOie2LcyHhFybmnqRj21Piqmk"
+  }
+}

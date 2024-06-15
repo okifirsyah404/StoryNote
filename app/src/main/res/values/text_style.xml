@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StoryNote.Text">
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">@dimen/font_reg</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+    <style name="Theme.StoryNote.Text.LabelLarge">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">@dimen/font_xmedium</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+    <style name="Theme.StoryNote.Text.LabelMedium">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+    <style name="Theme.StoryNote.Text.LabelSmall">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+    <style name="Theme.StoryNote.Text.BodyLarge">
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">@dimen/font_xmedium</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+    <style name="Theme.StoryNote.Text.BodyMedium">
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+    <style name="Theme.StoryNote.Text.BodySmall">
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+</resources>

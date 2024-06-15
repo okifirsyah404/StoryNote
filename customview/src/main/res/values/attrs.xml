@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MainEditText">
+        <attr name="hint" format="string" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="prefixIcon" format="reference" />
+        <attr name="suffixIcon" format="reference" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="outlineColor" format="color" />
+        <attr name="focusOutlineColor" format="color" />
+        <attr name="outlineThickness" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MainPasswordEditText">
+        <!--        <attr name="hint" format="string" />-->
+        <!--        <attr name="borderRadius" format="dimension" />-->
+        <!--        <attr name="prefixIcon" format="reference" />-->
+        <!--        <attr name="suffixIcon" format="reference" />-->
+        <!--        <attr name="backgroundColor" format="color" />-->
+        <!--        <attr name="outlineColor" format="color" />-->
+        <!--        <attr name="focusOutlineColor" format="color" />-->
+        <!--        <attr name="outlineThickness" format="dimension" />-->
+        <attr name="onPasswordShowIcon" format="reference" />
+        <attr name="onPasswordHideIcon" format="reference" />
+        <attr name="passwordType">
+            <flag name="main" value="0" />
+            <flag name="confirmation" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

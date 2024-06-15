@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_error"
+        android:layout_width="@dimen/dimen_48dp"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:src="@drawable/ic_error"
+        app:layout_constraintBottom_toTopOf="@+id/tv_error_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_error_title"
+        style="@style/Theme.StoryNote.Text.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        style="@style/Theme.StoryNote.Text.BodySmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:text="Error Message"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_error_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/act_retry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_error_message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
